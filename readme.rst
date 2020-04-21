@@ -15,7 +15,7 @@ Progress Project Yang Belum Dikerjakan
 4. Login Anggota UKM
 5. Tampilan Home Website
 6. Tampilan Detail Artikel
-7, Tampilan Detail / Home UKM
+7. Tampilan Detail / Home UKM
 8. Dan Lain" Masih Diperkirakan
 
 ###################
