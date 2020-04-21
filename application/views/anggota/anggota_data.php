@@ -1,6 +1,6 @@
 <section class="content-header">
       <h1>Menu
-        <small>Menu Kantin</small>
+        <small>Menu</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
