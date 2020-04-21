@@ -1,3 +1,23 @@
+**************************************
+Progress Project Yang Sudah Dikerjakan
+**************************************
+1. Halaman Login
+2. Dashboard Superadmin
+3. Data Anggota ( CRUD )
+4. Data UKM ( CRUD )
+
+**************************************
+Progress Project Yang Belum Dikerjakan
+**************************************
+1. Data Artikel ( CRUD )
+2. Login Ketua UKM
+3. Pendaftaran Anggota Baru
+4. Login Anggota UKM
+5. Tampilan Home Website
+6. Tampilan Detail Artikel
+7, Tampilan Detail / Home UKM
+8. Dan Lain" Masih Diperkirakan
+
 ###################
 What is CodeIgniter
 ###################
