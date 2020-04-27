@@ -4,7 +4,8 @@ class Artikel extends CI_Controller {
 	
 	function __construct()
 	{
-		parent::__construct();
+        parent::__construct();
+        $this->load->helper('tanggal');;
 		$this->load->model('artikel_m');;
 	}
 	
