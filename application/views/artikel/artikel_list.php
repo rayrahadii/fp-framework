@@ -43,13 +43,32 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
+
+
+          </div>
+          <div class="ml-auto">
+            <div class="social-wrap">
+              <a href="<?=base_url()?>frontend/#"><span class="icon-facebook"></span></a>
+              <a href="<?=base_url()?>frontend/#"><span class="icon-twitter"></span></a>
+              <a href="<?=base_url()?>frontend/#"><span class="icon-linkedin"></span></a>
+
+              <a href="<?=base_url()?>frontend/#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
+                class="icon-menu h3"></span></a>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+
+    </header>
+
     
-    <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('<?=site_url()?>frontend/images/bg_1.jpg'); padding-top:200px;">
+    <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('images/bg_1.jpg')">
         <div class="container">
-          <div class="row align-items-end justify-content-center text-center">
+          <div class="row align-items-end">
             <div class="col-lg-7">
-              <h2 class="mb-0">Login</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h2 class="mb-0">Artikel</h2>
+              <p>Unit Kegiatan Mahasiswa & Komunitas</p>
             </div>
           </div>
         </div>
@@ -58,41 +77,31 @@
 
     <div class="custom-breadcrumns border-bottom">
       <div class="container">
-        <a href="<?=base_url()?>frontend/index.html">Home</a>
+        <a href="<?=base_url()?>">Home</a>
         <span class="mx-3 icon-keyboard_arrow_right"></span>
-        <span class="current">Login</span>
+        <span class="current">Artikel</span>
       </div>
     </div>
 
     <div class="site-section">
         <div class="container">
-
-        <form action="<?=site_url('auth/process')?>" method="post">
-            <div class="row justify-content-center">
-                <div class="col-md-5">
-                    <div class="row">
-                        <div class="col-md-12 form-group">
-                            <label for="username">Username</label>
-                            <input type="text" name="username" class="form-control form-control-lg">
-                        </div>
-                        <div class="col-md-12 form-group">
-                            <label for="pword">Password</label>
-                            <input type="password" name="password" class="form-control form-control-lg">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <input type="submit" name="login" value="Log In" class="btn btn-primary btn-lg px-5">
-                        </div>
-                    </div>
+            <?php 
+              foreach($row->result() as $key => $data) { ?>
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-lg-0 mb-4">
+                <a href="<?=site_url('artikel/detailartikel/'.$data->artikel_id)?>" class="img-link mr-4"><img src="<?=base_url('uploads/artikel/'.$data->image_artikel)?>" alt="Image" class="img-fluid"></a>
+                </div>
+                <div class="col-lg-5 ml-auto align-self-center">
+                    <h3 class="section-title-underline mb-5">
+                        <span><?=$data->judul_artikel?></span><p style="font-size: 18px;"><?=$data->tanggal_dibuat?> Oleh <?=$data->penulis_artikel?></p>
+                    </h3>
+                    <p><?=$data->keterangan?></p>
+                    <p style="overflow:hidden; white-space:nowrap; text-overflow:ellipsis; "><?=$data->isi_artikel?></p>
+                    <h5><a href="<?=site_url('artikel/detailartikel/'.$data->artikel_id)?>">Lihat Selengkapnya</a></h5>
                 </div>
             </div>
-            </form>
-            
-
-          
-        </div>
-    </div>
+            <?php 
+              } ?>
 
   </div>
   <!-- .site-wrap -->

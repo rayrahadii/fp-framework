@@ -24,10 +24,19 @@ class Artikel extends CI_Controller {
 					'row' => $artikel
 				);
 				$this->load->view('/include/navbar');
-    			$this->load->view('detailartikel', $data);
+    			$this->load->view('artikel/artikel_detail_home', $data);
     			$this->load->view('/include/footer');
 			}
 		
+	}
+
+	public function artikel_list()
+	{
+				$data['row'] = $this->artikel_m->get();
+				$this->load->view('/include/navbar');
+    			$this->load->view('artikel/artikel_list', $data);
+    			$this->load->view('/include/footer');
+			
 	}
 
 	public function add() 
