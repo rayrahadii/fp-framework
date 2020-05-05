@@ -6,6 +6,8 @@ Progress Project Yang Sudah Dikerjakan
 3. Data Anggota ( CRUD )
 4. Data UKM ( CRUD )
 5. Data Artikel ( CRUD )
+6. Tampilan Home Website
+7. Tampilan Detail Artikel
 
 **************************************
 Progress Project Yang Belum Dikerjakan
@@ -13,7 +15,5 @@ Progress Project Yang Belum Dikerjakan
 1. Login Ketua UKM
 2. Pendaftaran Anggota Baru
 3. Login Anggota UKM
-4. Tampilan Home Website
-5. Tampilan Detail Artikel
-6. Tampilan Detail / Home UKM
-7. Dan Lain" Masih Diperkirakan
+4. Tampilan Detail / Home UKM
+5. Dan Lain" Masih Diperkirakan
