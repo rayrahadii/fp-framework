@@ -59,7 +59,7 @@
 
     <div class="custom-breadcrumns border-bottom">
       <div class="container">
-        <a href="<?=base_url()?>frontend/index.html">Home</a>
+        <a href="<?=base_url()?>">Home</a>
         <span class="mx-3 icon-keyboard_arrow_right"></span>
         <span class="current">Register</span>
       </div>

@@ -68,3 +68,4 @@ public function process()
 			$this->load->view('register');
 		}
 }
+}
