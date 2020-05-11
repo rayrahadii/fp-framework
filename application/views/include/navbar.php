@@ -20,7 +20,7 @@
         <div class="d-flex align-items-center">
           <div class="site-logo">
             <a href="<?=base_url()?>" class="d-block">
-              <img src="<?=base_url()?>frontend/images/logo.jpg" alt="Image" class="img-fluid">
+              <img src="<?=base_url()?>frontend/images/logo2.jpg" alt="Image" class="img-fluid">
             </a>
           </div>
           <div class="mr-auto">
@@ -30,10 +30,10 @@
                   <a href="<?=base_url()?>" class="nav-link text-left">Beranda</a>
                 </li>
                 <li class="has-children">
-                  <a href="about.html" class="nav-link text-left">UKM</a>
+                  <a href="<?=site_url('home/ukm')?>" class="nav-link text-left">UKM</a>
                   <ul class="dropdown">
-                    <li><a href="teachers.html">Our Teachers</a></li>
-                    <li><a href="about.html">Our School</a></li>
+                    <li><a href="<?=site_url('home/ukm')?>">Our Teachers</a></li>
+                    <li><a href="<?=site_url('home/ukm')?>">Our School</a></li>
                   </ul>
                 </li>
                 <li class="has-children">
