@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Academics &mdash; Website by Colorlib</title>
+  <title>UKM UPN Veteran Jatim</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -51,17 +51,21 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
-    
+            <h1 class="display-2">UKM</h1>
+          <h3>Unit Kegiatan Mahasiswa</h3>
+          <a href="<?=site_url('home/register')?>"><button type="button" class="btn btn-outline-light btn-lg">Daftar Sekarang</button></a>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="intro-section" style="background-image: url('<?=base_url()?>frontend/images/voly.jpg');">
+      <div class="intro-section" style="background-image: url('<?=base_url()?>frontend/images/meeting.png');">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
-              
+              <h1 class="display-2">KOMUNITAS</h1>
+          <h3>Komunitas Akademik UPNV Jatim</h3>
+          <a href="<?=site_url('register/add')?>"><button type="button" class="btn btn-outline-light btn-lg">Daftar Sekarang</button></a>
             </div>
           </div>
         </div>
