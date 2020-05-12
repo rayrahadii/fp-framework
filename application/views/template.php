@@ -134,7 +134,7 @@
         <?php } ?>
         <?php if($this->fungsi->user_login()->level == 2) { ?>
         <li><a href="<?=site_url('dashboard')?>"><i class="fa fa-book"></i> <span>Dashboard</span></a></li>
-        <li><a href="<?=site_url('anggota')?>"><i class="fa fa-money"></i> <span>Anggota UKM</span></a></li>
+        <li><a href="<?=site_url('ketua')?>"><i class="fa fa-money"></i> <span>Anggota UKM</span></a></li>
         <li><a href="<?=site_url('artikel')?>"><i class="fa fa-envelope"></i> <span>Artikel</span></a></li>
         <?php } ?>
       

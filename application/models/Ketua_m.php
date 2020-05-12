@@ -1,16 +1,6 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
-class Anggota_m extends CI_Model {
-
-    public function get($id = null)
-    {
-        $this->db->from('anggota');
-        if($id != null) {
-            $this->db->where('anggota_id', $id);
-        }
-        $query = $this->db->get();
-        return $query;
-    }
+class Ketua_m extends CI_Model {
 
     public function getUkm($id = null)
     {
@@ -24,22 +14,7 @@ class Anggota_m extends CI_Model {
         $query = $this->db->get();
         return $query;
     }
-    
-    public function add($post)
-    {
-        $params = [
-            'username' => $post['username'],
-            'email' => $post['email'],
-            'password' => sha1($post['password']),
-            'nama_anggota' => $post['nama_anggota'],
-            'npm' => $post['npm'],
-            'fakultas' => $post['fakultas'],
-            'image' => $post['image'],
-            'ukm_id' => $post['ukm_id'],
-            'level' =>'3',
-        ];
-        $this->db->insert('anggota', $params);
-    }
+
     
     public function edit($post)
     {
@@ -50,7 +25,7 @@ class Anggota_m extends CI_Model {
             'nama_anggota' => $post['nama_anggota'],
             'npm' => $post['npm'],
             'fakultas' => $post['fakultas'],
-            'ukm_id' => $post['ukm_id'],
+            'ukm' => $post['ukm'],
         ];
         $this->db->where('anggota_id', $post['id']);
         $this->db->update('anggota', $params);

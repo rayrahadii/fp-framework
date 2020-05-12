@@ -15,7 +15,7 @@
             <div class="box-header">
                 <h3 class="box-tittle"><?=ucfirst($page)?> Detail</h3>
                 <div class="pull-right">
-                    <a href="<?=site_url('anggota')?>" class="btn btn-warning btn-flat">
+                    <a href="<?=site_url('ketua')?>" class="btn btn-warning btn-flat">
                         <i class="fa fa-undo"></i> Kembali
                     </a>
                 </div>
@@ -46,12 +46,12 @@
                                 <input type="text" name="fakultas" value="<?=$row->fakultas?>" class="form-control" readonly>
                             </div>
                             <div class="form-group">
-                                <label>UKM</label>
-                                <input type="text" name="fakultas" value="<?=$row->ukm_id?>" class="form-control" readonly>
-                            </div>
-                            <div class="form-group">
                                 <label>Foto KTM</label><br>
                                 <img src="<?=base_url('uploads/ktm/'.$row->image)?>" style="width:100px">
+                            </div>
+                            <div class="form-group">
+                                <label>UKM</label>
+                                <input type="text" name="ukm" value="<?=$row->nama_ukm?>" class="form-control" readonly>
                             </div>
                             <div class="form-group">
                             </div>

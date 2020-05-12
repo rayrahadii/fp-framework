@@ -15,7 +15,7 @@
             <div class="box-header">
                 <h3 class="box-tittle"><?=ucfirst($page)?> Data Anggota (* Harus Diisi)</h3>
                 <div class="pull-right">
-                    <a href="<?=site_url('anggota')?>" class="btn btn-warning btn-flat">
+                    <a href="<?=site_url('ketua')?>" class="btn btn-warning btn-flat">
                         <i class="fa fa-undo"></i> Kembali
                     </a>
                 </div>
@@ -23,7 +23,7 @@
             <div class="box-body">
                 <div class="row">
                     <div class="col-md-4 col-md-offset-4">
-                        <form enctype="multipart/form-data" action="<?=site_url('anggota/process')?>" method="post">
+                        <form enctype="multipart/form-data" action="<?=site_url('ketua/process')?>" method="post">
                             <div class="form-group">
                                 <label>Nama Anggota*</label>
                                 <input type="hidden" name="id" value="<?=$row->anggota_id?>">
@@ -40,7 +40,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Password *</label>
-                                <input type="password" name="password" value="<?=$row->fakultas?>" class="form-control" required>
+                                <input type="password" name="password" value="<?=$row->password?>" class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label>Email *</label>
@@ -49,7 +49,7 @@
                             <div class="form-group">
                                 <label>Fakultas *</label>
                                 <input type="text" name="fakultas" value="<?=$row->fakultas?>" class="form-control" required>
-                            </div>  
+                            </div>
                             <div class="form-group">
                             <label>UKM *</label>
                             <select class="form-control" name="ukm_id">

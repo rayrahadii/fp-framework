@@ -1,37 +1,18 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
-class Anggota extends CI_Controller {
+class Ketua extends CI_Controller {
 	
 	function __construct()
 	{
 		parent::__construct();
+		$this->load->model('ketua_m');;
 		$this->load->model('anggota_m');;
 	}
-	
+
 	public function index()
 	{
-		$data['row'] = $this->anggota_m->get();
-		$this->template->load('template', 'anggota/anggota_data', $data);
-	}
-
-
-	public function add() 
-	{
-		$anggota = new stdClass();
-		$anggota->anggota_id = null;
-		$anggota->ukm_id = null;
-		$anggota->nama_anggota = null;
-		$anggota->username = null;
-		$anggota->password = null;
-		$anggota->npm = null;
-		$anggota->email = null;
-		$anggota->fakultas = null;
-		$anggota->level = null;
-		$data = array(
-			'page' => 'add',
-			'row' => $anggota
-		);
-		$this->template->load('template', 'anggota/anggota_form', $data);
+		$data['row'] = $this->anggota_m->getUkm();
+		$this->template->load('template', 'anggota/ketua_data', $data);
 	}
 
 	public function edit($id)
@@ -43,10 +24,10 @@ class Anggota extends CI_Controller {
 				'page' => 'edit',
 				'row' => $anggota
 			);
-			$this->template->load('template', 'anggota/anggota_form', $data);
+			$this->template->load('template', 'anggota/ketua_form', $data);
 		} else {
 			$this->session->set_flashdata('success', 'Data Berhasil Diperbarui');
-			redirect('anggota');
+			redirect('ketua');
 		}
 	}
 
@@ -81,7 +62,7 @@ class Anggota extends CI_Controller {
 		if($this->db->affected_rows() > 0) {
 			$this->session->set_flashdata('success', 'Data Berhasil Disimpan');
 		}
-		redirect('anggota');
+		redirect('ketua');
 	}
 
 	public function del($id)
@@ -95,19 +76,19 @@ class Anggota extends CI_Controller {
 		if($this->db->affected_rows() > 0) {
 			$this->session->set_flashdata('success', 'Data Berhasil Dihapus');
 		}
-		redirect('anggota');
+		redirect('ketua');
 	}
 
 	public function detail($id)
 	{
-		$query = $this->anggota_m->get($id);
+		$query = $this->ketua_m->getUkm($id);
 		if($query->num_rows() > 0) {
 			$anggota = $query->row();
 			$data = array(
 				'page' => 'detail',
 				'row' => $anggota
 			);
-			$this->template->load('template', 'anggota/anggota_detail', $data);
+			$this->template->load('template', 'anggota/ketua_detail', $data);
 		}
 	}
 
