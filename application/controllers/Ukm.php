@@ -23,7 +23,7 @@ class Ukm extends CI_Controller {
 					'row' => $ukm
 				);
 				$this->load->view('/include/navbar');
-    			$this->load->view('detailukm', $data);
+    			$this->load->view('ukm/ukm_detail_home', $data);
     			$this->load->view('/include/footer');
 			}
 		

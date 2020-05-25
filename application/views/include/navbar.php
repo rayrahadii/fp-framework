@@ -29,19 +29,11 @@
                 <li>
                   <a href="<?=base_url()?>" class="nav-link text-left">Beranda</a>
                 </li>
-                <li class="has-children">
+                <li>
                   <a href="<?=site_url('home/ukm')?>" class="nav-link text-left">UKM</a>
-                  <ul class="dropdown">
-                    <li><a href="<?=site_url('home/ukm')?>">Our Teachers</a></li>
-                    <li><a href="<?=site_url('home/ukm')?>">Our School</a></li>
-                  </ul>
                 </li>
-                <li class="has-children">
-                  <a href="about.html" class="nav-link text-left">Komunitas</a>
-                  <ul class="dropdown">
-                    <li><a href="teachers.html">Our Teachers</a></li>
-                    <li><a href="about.html">Our School</a></li>
-                  </ul>
+                <li>
+                  <a href="<?=site_url('home/komunitas')?>" class="nav-link text-left">Komunitas</a>
                 </li>
                 <li>
                   <a href="<?=base_url('artikel/artikel_list')?>" class="nav-link text-left">Artikel</a>

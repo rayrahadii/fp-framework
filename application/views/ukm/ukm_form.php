@@ -50,7 +50,7 @@
                                 <select name="status_ukm" value="<?=$row->status_ukm?>" class="form-control">
                                     <option value="">- Pilih -</option>
                                     <option value="Aktif">Aktif</option>
-                                    <option value="Pasif">Pasif</option>
+                                    <option value="Tidak Aktif">Tidak Aktif</option>
                                 </select>
                             </div>
                             <?php if($page == 'add') { ?>

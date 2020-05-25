@@ -27,6 +27,7 @@
                             <div class="form-group">
                                 <label>Nama Anggota*</label>
                                 <input type="hidden" name="id" value="<?=$row->anggota_id?>">
+                                <input type="hidden" name="artikel_id" value="<?=$row->artikel_id?>">
                                 <input type="hidden" name="level" value="<?=$row->level?>">
                                 <input type="text" name="nama_anggota" value="<?=$row->nama_anggota?>" class="form-control" required>
                             </div>

@@ -19,6 +19,7 @@ class Anggota extends CI_Controller {
 	{
 		$anggota = new stdClass();
 		$anggota->anggota_id = null;
+		$anggota->artikel_id = null;
 		$anggota->ukm_id = null;
 		$anggota->nama_anggota = null;
 		$anggota->username = null;

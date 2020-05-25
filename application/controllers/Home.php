@@ -34,14 +34,14 @@ class Home extends CI_Controller {
         public function ukm()
         {
         $this->load->view('/include/navbar');
-        $this->load->view('ukm');
+        $this->load->view('ukm/list_ukm');
         $this->load->view('/include/footer');
         }
         
         public function komunitas()
         {
         $this->load->view('/include/navbar');
-        $this->load->view('komunitas');
+        $this->load->view('ukm/list_komunitas');
         $this->load->view('/include/footer');
         }
 
