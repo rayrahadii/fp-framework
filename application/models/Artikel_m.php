@@ -42,7 +42,7 @@ class Artikel_m extends CI_Model {
         $params = [
             'judul_artikel' => $post['judul_artikel'],
             'ukm_id' => $post['ukm_id'],
-            
+            'anggota_id' => $post['anggota_id'],
             'keterangan' => $post['keterangan'],
             'penulis_artikel' => $post['penulis_artikel'],
             'isi_artikel' => $post['isi_artikel'],

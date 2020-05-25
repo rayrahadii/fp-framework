@@ -13,6 +13,7 @@ public function process()
 				$row = $query->row();
 				$params = array(
 					'anggotaid' => $row->anggota_id,
+					'namaanggota' => $row->nama_anggota,
 					'ukmid' => $row->ukm_id,
 					'level' => $row->level
 				);

@@ -26,6 +26,8 @@
                         <form enctype="multipart/form-data" action="<?=site_url('ketuartikel/process')?>" method="post">
                             <div class="form-group">
                             <input type="hidden" name="ukm_id" value="<?=$this->session->userdata('ukmid')?>">
+                            <input type="hidden" name="anggota_id" value="<?=$this->session->userdata('anggotaid')?>">
+                            <input type="hidden" name="penulis_artikel" value="<?=$this->session->userdata('namaanggota')?>">
                                 <label>Judul Artikel *</label>
                                 <input type="hidden" name="id" value="<?=$row->artikel_id?>">
                                 <input type="text" name="judul_artikel" value="<?=$row->judul_artikel?>" class="form-control" required>
@@ -33,10 +35,6 @@
                             <div class="form-group">
                                 <label>Keterangan *</label>
                                 <input type="text" name="keterangan" value="<?=$row->keterangan?>" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Penulis Artikel *</label>
-                                <input type="text" name="penulis_artikel" value="<?=$row->penulis_artikel?>" class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label>Isi Artikel *</label>

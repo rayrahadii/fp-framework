@@ -19,6 +19,8 @@ class Ketuartikel extends CI_Controller {
 	{
 		$artikel = new stdClass();
 		$artikel->artikel_id = null;
+		$artikel->ukm_id = null;
+		$artikel->anggota_id = null;
 		$artikel->judul_artikel = null;
 		$artikel->keterangan = null;
 		$artikel->penulis_artikel = null;
@@ -78,7 +80,7 @@ class Ketuartikel extends CI_Controller {
 		if($this->db->affected_rows() > 0) {
 			$this->session->set_flashdata('success', 'Data Berhasil Disimpan');
 		}
-		redirect('artikel');
+		redirect('ketuartikel');
 	}
 
 	public function del($id)
@@ -92,7 +94,7 @@ class Ketuartikel extends CI_Controller {
 		if($this->db->affected_rows() > 0) {
 			$this->session->set_flashdata('success', 'Data Berhasil Dihapus');
 		}
-		redirect('artikel');
+		redirect('ketuartikel');
 	}
 
 	public function detail($id)
