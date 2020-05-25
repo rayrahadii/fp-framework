@@ -16,6 +16,7 @@ class Ketua_m extends CI_Model {
     }
 
     
+    
     public function edit($post)
     {
         $params = [
