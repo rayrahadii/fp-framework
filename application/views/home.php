@@ -53,7 +53,7 @@
             <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
             <h1 class="display-2">UKM</h1>
           <h3>Unit Kegiatan Mahasiswa</h3>
-          <a href="<?=site_url('home/register')?>"><button type="button" class="btn btn-outline-light btn-lg">Daftar Sekarang</button></a>
+          <a href="<?=site_url('register/add')?>"><button type="button" class="btn btn-outline-light btn-lg">Daftar Sekarang</button></a>
             </div>
           </div>
         </div>

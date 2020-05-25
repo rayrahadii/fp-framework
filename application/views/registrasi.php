@@ -48,8 +48,8 @@
         <div class="container">
           <div class="row align-items-end justify-content-center text-center">
             <div class="col-lg-7">
-              <h2 class="mb-0">Register</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h2 class="mb-0">Daftar</h2>
+              <p></p>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@
 
     <div class="custom-breadcrumns border-bottom">
       <div class="container">
-        <a href="<?=base_url()?>frontend/index.html">Home</a>
+        <a href="<?=base_url()?>">Home</a>
         <span class="mx-3 icon-keyboard_arrow_right"></span>
         <span class="current">Register</span>
       </div>

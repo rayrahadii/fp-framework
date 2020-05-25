@@ -83,7 +83,7 @@
                         <p><?=$row->keterangan_ukm?></p>
                         <p></p>
                         <p>
-                            <a href="<?=site_url('register')?>" class="btn btn-primary rounded-0 btn-lg px-5">Daftar Sekarang</a>
+                            <a href="<?=site_url('register/add')?>" class="btn btn-primary rounded-0 btn-lg px-5">Daftar Sekarang</a>
                         </p>
     
                     </div>
