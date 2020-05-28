@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 25, 2020 at 12:43 PM
+-- Generation Time: May 28, 2020 at 04:37 PM
 -- Server version: 10.1.39-MariaDB
 -- PHP Version: 7.3.5
 
@@ -90,7 +90,9 @@ INSERT INTO `artikel` (`artikel_id`, `ukm_id`, `anggota_id`, `judul_artikel`, `k
 (10, 0, 0, 'Contoh Judul Kegiatan 1', 'Contoh Keterangan 1', 'Test Penulis 1', 'Isi Conton Judul Kegiatan 1', 'artikel-200505-c53fbd0be5.jpg', '2020-05-05 10:02:35'),
 (13, 4, 2, 'basket', 'basket', 'admin basket', 'jwaijiowaijoawiojaw', 'artikel-200525-53ccd8f857.jpg', '2020-05-25 14:55:09'),
 (14, 5, 0, 'musik', 'musik', 'admin musik', 'okwaokawokwaokaw', 'artikel-200525-2844753719.png', '2020-05-25 14:57:39'),
-(15, 4, 2, 'latihan rutin', 'ukm basket', 'rayrahadii', 'awokwaoawkoawok', 'artikel-200525-497777ffa1.jpg', '2020-05-25 15:19:37');
+(15, 4, 2, 'latihan rutin', 'ukm basket', 'rayrahadii', 'awokwaoawkoawok', 'artikel-200525-497777ffa1.jpg', '2020-05-25 15:19:37'),
+(17, 5, 13, 'UKM Musik', 'Ukm Musik', 'Dandy Noor', 'jkjijihuigyuf', 'artikel-200525-215b9e8928.jpg', '2020-05-25 17:49:26'),
+(18, 4, 21, 'Rayrahadi1', 'test artikel 1', 'Rahadi Sasmita ', 'isi artikel', 'artikel-200528-3a5a4ba69b.jpg', '2020-05-28 21:30:37');
 
 -- --------------------------------------------------------
 
@@ -149,13 +151,13 @@ ALTER TABLE `ukm`
 -- AUTO_INCREMENT for table `anggota`
 --
 ALTER TABLE `anggota`
-  MODIFY `anggota_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `anggota_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `artikel`
 --
 ALTER TABLE `artikel`
-  MODIFY `artikel_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `artikel_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `ukm`

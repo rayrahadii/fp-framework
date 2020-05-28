@@ -25,6 +25,19 @@ class Artikel_m extends CI_Model {
         return $query;
     }
 
+    public function getArtikel3($id = null)
+    {
+        $this->db->select('ukm.ukm_id, artikel.artikel_id, judul_artikel, keterangan, penulis_artikel,isi_artikel, image_artikel, tanggal_dibuat ');
+        $this->db->from('ukm');
+        $this->db->join('artikel', 'artikel.ukm_id = ukm.ukm_id');
+        $this->db->where('artikel.anggota_id', $this->session->userdata('anggotaid'));
+        if($id != null) {
+            $this->db->where('artikel.artikel_id', $id);
+        }
+        $query = $this->db->get();
+        return $query;
+    }
+
     public function gethome($id = null)
     {
         $this->db->from('artikel');
