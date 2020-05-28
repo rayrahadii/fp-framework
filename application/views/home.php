@@ -132,9 +132,8 @@
             </h2>
           </div>
           <div class="col-lg-8">
-            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem nesciunt quaerat ad reiciendis perferendis voluptate fugiat sunt fuga error totam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus assumenda omnis tempora ullam alias amet eveniet voluptas, incidunt quasi aut officiis porro ad, expedita saepe necessitatibus rem debitis architecto dolore? Nam omnis sapiente placeat blanditiis voluptas dignissimos, itaque fugit a laudantium adipisci dolorem enim ipsum cum molestias? Quod quae molestias modi fugiat quisquam. Eligendi recusandae officiis debitis quas beatae aliquam?</p>
-            <p><a href="#">Read more</a></p>
+            <p class="lead">Unit Kegiatan Mahasiswa yang biasa dipanggil UKM merupakan sebuah wadah aktivitas kemahasiswaan luar kelas untuk mengembangkan minat, bakat dan keahlian tertentu yang merupakan lembaga partner baik berada di tingkat universitas.</p>
+            <p class="lead">Sama halnya sepeti Komunitas yang berada pada Universitas UPN Veteran Jawa Timur </p>
           </div>
         </div>
       </div>
@@ -193,39 +192,16 @@
               <h2 class="text-black">Video</h2><br>
               <a href="#">Lihat Semua Video</a>
             </div>
-            <a href="<?=base_url()?>frontend/https://vimeo.com/45830194" class="video-1 mb-4" data-fancybox="" data-ratio="2">
-              <span class="play">
-                <span class="icon-play"></span>
-              </span>
-              <img src="<?=base_url()?>frontend/images/course_5.jpg" alt="Image" class="img-fluid">
-            </a>
-            <a href="<?=base_url()?>frontend/https://vimeo.com/45830194" class="video-1 mb-4" data-fancybox="" data-ratio="2">
-                <span class="play">
-                  <span class="icon-play"></span>
-                </span>
-                <img src="<?=base_url()?>frontend/images/course_5.jpg" alt="Image" class="img-fluid">
-              </a>
+            <div class="video-1 mb-4 embed-responsive embed-responsive-16by9">
+					   <iframe width="560" height="315" src="https://www.youtube.com/embed/JPZhdsSXCE4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					
+					</div>
+          <div class="video-1 mb-4 embed-responsive embed-responsive-16by9">
+					   <iframe width="560" height="315" src="https://www.youtube.com/embed/4gb5x5JJznY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					
+					</div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="site-section ftco-subscribe-1" style="background-image: url('<?=base_url()?>vendor/images/bg_1.jpg')">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <h2>Subscribe to us!</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,</p>
-          </div>
-          <div class="col-lg-5">
-            <form action="" class="d-flex">
-              <input type="text" class="rounded form-control mr-2 py-3" placeholder="Enter your email">
-              <button class="btn btn-primary rounded py-3 px-4" type="submit">Send</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> 
 
   </div>
   <!-- .site-wrap -->

@@ -3,40 +3,28 @@
         <div class="row">
           <div class="col-lg-3">
             <p class="mb-4"><img src="<?=base_url()?>frontend/images/logo.png" alt="Image" class="img-fluid"></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.</p>  
-            <p><a href="#">Learn More</a></p>
+            
           </div>
           <div class="col-lg-3">
-            <h3 class="footer-heading"><span>Our Campus</span></h3>
+            <h3 class="footer-heading"><span>UKM & Komunitas</span></h3>
             <ul class="list-unstyled">
-                <li><a href="#">Acedemic</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Our Interns</a></li>
-                <li><a href="#">Our Leadership</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Human Resources</a></li>
+                <li><a href="<?=site_url('home/ukm')?>">Daftar UKM</a></li>
+                <li><a href="<?=site_url('home/komunitas')?>">Daftar Komunitas</a></li>
+                <li><a href="<?=site_url('register/add')?>">Registrasi Anggota Baru</a></li>
             </ul>
           </div>
           <div class="col-lg-3">
-              <h3 class="footer-heading"><span>Our Courses</span></h3>
+              <h3 class="footer-heading"><span>Artikel & Kegiatan</span></h3>
               <ul class="list-unstyled">
-                  <li><a href="#">Math</a></li>
-                  <li><a href="#">Science &amp; Engineering</a></li>
-                  <li><a href="#">Arts &amp; Humanities</a></li>
-                  <li><a href="#">Economics &amp; Finance</a></li>
-                  <li><a href="#">Business Administration</a></li>
-                  <li><a href="#">Computer Science</a></li>
+                  <li><a href="<?=base_url('artikel/artikel_list')?>">List Artikel</a></li>
               </ul>
           </div>
           <div class="col-lg-3">
-              <h3 class="footer-heading"><span>Contact</span></h3>
-              <ul class="list-unstyled">
-                  <li><a href="#">Help Center</a></li>
-                  <li><a href="#">Support Community</a></li>
-                  <li><a href="#">Press</a></li>
-                  <li><a href="#">Share Your Story</a></li>
-                  <li><a href="#">Our Supporters</a></li>
-              </ul>
+              <h3 class="footer-heading"><span>Kontak Kami</span></h3>
+              <p>Jl.Raya Rungkut Madya, Gunung Anyar, Surabaya </p>  
+            <p>Telp : +62 (031) 870 6369 </p> 
+            <p>Fax. : +62 (031) 870 6372 </p> 
+            <p><a href="https://www.upnjatim.ac.id/">Learn More</a></p>
           </div>
         </div>
 
