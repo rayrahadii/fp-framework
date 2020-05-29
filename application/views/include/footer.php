@@ -2,7 +2,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
-            <p class="mb-4"><img src="<?=base_url()?>frontend/images/logo.png" alt="Image" class="img-fluid"></p>
+            <p class="mb-4"><img src="<?=base_url()?>frontend/images/logo4.png" alt="Image" class="img-fluid" style="width: 200px;"></p>
             
           </div>
           <div class="col-lg-3">

@@ -54,12 +54,12 @@
                             <label>UKM *</label>
                             <select class="form-control" name="ukm_id">
                             <option value="">- Pilih -</option>
-                                    <option value="4">Basket</option>
-                                    <option value="5">Musik</option>
-                                    <option value="7">Futsal</option>
-                                    <option value="8">Informatic Learning Community</option>
-                                    <option value="9">Komunitas Linux UPN</option>
-                                    <option value="10">Tennis Lapangan</option>
+                            <?php
+                            $query = $this->db->query('SELECT * FROM ukm');
+                            foreach ($query->result() as $data1) { ?>
+                                    <option value="<?=$data1->ukm_id?>"><?=$data1->nama_ukm?></option>
+                                    <?php
+                             } ?>
                             </select>
                             </div>
                             <?php if($page == 'add') { ?>

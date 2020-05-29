@@ -53,6 +53,7 @@ class Anggota_m extends CI_Model {
             'npm' => $post['npm'],
             'fakultas' => $post['fakultas'],
             'ukm_id' => $post['ukm_id'],
+            'level' => $post['level'],
         ];
         $this->db->where('anggota_id', $post['id']);
         $this->db->update('anggota', $params);
