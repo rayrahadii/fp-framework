@@ -1,0 +1,29 @@
+Login Superadmin :
+Username : superadmin@gmail.com
+Pass : superadmin
+
+Login Ketua UKM Basket :
+Username : rayrahadii
+Pass : 12345
+
+Login Ketua UKM Musik : 
+Username : dandos
+Pass : dandos
+
+Login Sesuai Video Demo : 
+Ketua Football 
+Username : rahadiketua
+Pass : 12345
+
+Anggota Football
+Username : rahadianggota
+Pass : 12345
+
+Anggota Football
+Username : sasmita
+Pass : 12345
+
+- Untuk mengganti role dapat dilakukan langsung juga pada database jika tidak ingin mengganti data yang lain
+- Untuk menambahkan anggota secara manual di database untuk password menggunakan format SHA1
+
+Sekian , terima kasih.

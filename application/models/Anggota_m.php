@@ -29,7 +29,6 @@ class Anggota_m extends CI_Model {
     {
         $params = [
             'username' => $post['username'],
-            'artikel_id' => $post['artikel_id'],
             'ukm_id' => $post['ukm_id'],
             'email' => $post['email'],
             'password' => sha1($post['password']),

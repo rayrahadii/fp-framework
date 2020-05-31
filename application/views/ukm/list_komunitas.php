@@ -59,7 +59,7 @@
       <div class="container">
         <a href="<?=base_url()?>">Home</a>
         <span class="mx-3 icon-keyboard_arrow_right"></span>
-        <span class="current">UKM</span>
+        <span class="current">Komunitas</span>
       </div>
     </div>
 

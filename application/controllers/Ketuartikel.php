@@ -42,7 +42,7 @@ class Ketuartikel extends CI_Controller {
 				'page' => 'edit',
 				'row' => $artikel
 			);
-			$this->template->load('template', 'artikel/artikel_form', $data);
+			$this->template->load('template', 'artikel/ketua_form', $data);
 		} else {
 			$this->session->set_flashdata('success', 'Data Berhasil Diperbarui');
 			redirect('artikel');
