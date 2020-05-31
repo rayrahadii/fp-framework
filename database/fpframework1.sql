@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 28, 2020 at 04:37 PM
+-- Generation Time: May 31, 2020 at 09:32 PM
 -- Server version: 10.1.39-MariaDB
 -- PHP Version: 7.3.5
 
@@ -31,7 +31,6 @@ SET time_zone = "+00:00";
 CREATE TABLE `anggota` (
   `anggota_id` int(11) NOT NULL,
   `ukm_id` int(11) NOT NULL,
-  `artikel_id` int(11) NOT NULL,
   `username` varchar(40) NOT NULL,
   `password` varchar(40) NOT NULL,
   `nama_anggota` varchar(40) NOT NULL,
@@ -39,7 +38,6 @@ CREATE TABLE `anggota` (
   `npm` varchar(40) NOT NULL,
   `fakultas` varchar(40) NOT NULL,
   `image` varchar(100) DEFAULT NULL,
-  `ukm` varchar(128) NOT NULL,
   `level` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -47,18 +45,19 @@ CREATE TABLE `anggota` (
 -- Dumping data for table `anggota`
 --
 
-INSERT INTO `anggota` (`anggota_id`, `ukm_id`, `artikel_id`, `username`, `password`, `nama_anggota`, `email`, `npm`, `fakultas`, `image`, `ukm`, `level`) VALUES
-(1, 0, 0, 'superadmin@gmail.com', '889a3a791b3875cfae413574b53da4bb8a90d53e', 'superadmin', 'superadmin@gmail.com', '1', 'superadmin', '', '', 1),
-(2, 4, 0, 'rayrahadii', '8cb2237d0679ca88db6464eac60da96345513964', 'Nyoman Rahadi Sasmita', 'rahadisasmita@gmail.com', '17081010086', 'FIK', 'ktm-200228-f48db1f35d.jpg', '', 2),
-(3, 4, 0, 'naufal13', 'c61faacbcfb290c6a0c8615becda4eb973868313', 'Naufal Mumtaz', 'naufal@gmail.com', '17081010105', 'FIK', '', '', 3),
-(10, 4, 0, 'aliev', '909cc24fe69e624f714546ce56269b8c5c44283b', 'aliev wisnu purnomo', 'aliev@gmail.com', '17081010093', 'FIK', '', '', 3),
-(12, 5, 0, 'mifaabiyu', '8ba3600566ae2417a7622b7491f816b722d1d9e2', 'Mifa Abiyu', 'Mifa@gmail.com', '17081010090', 'Teknik Kimia', '', '', 3),
-(13, 5, 0, 'dandos', '6cc751f8ce230e55a452f6a0b0fb0f2df040a4d6', 'Dandy Noor', 'dandos@gmail.com', '17081010102', 'Teknik Kimia', '', '', 2),
-(14, 5, 0, 'rayrahadd', '488d53a74508dfd339004eb64ac50ae80e6248af', 'Ray Rahadii', 'rayrahad@gmail.com', '17081010089', 'Fisip', 'ktm-200228-9639427a3d.jpg', '', 3),
-(16, 0, 0, 'tarunart', '84a9c722b90c5d329f18a3ede920e6a863ac6908', 'Taruna Ardianto', 'taruna@gmail.com', '17081010076', 'FIK', 'ktm-200228-0660a112fe.jpg', '', 3),
-(17, 0, 0, 'reyilham', 'cead679610e8f865fc7b5c4ee23b159d866222b9', 'Rey Ilham', 'rey@gmail.com', '17081010069', 'FIK', 'ktm-200228-25e74969e7.png', '', 3),
-(19, 0, 0, 'taufiq', '9a69fd7521faf7663213508d938a3d8d94f0e2f9', 'Taufiq ', 'taufiq@gmail.com', '17081010099', 'Teknik Kimia', 'ktm-200228-9413f20d42.jpg', '', 3),
-(21, 4, 0, 'rayrahadi1', '8cb2237d0679ca88db6464eac60da96345513964', 'Rahadi Sasmita ', 'rayrahadi@gmail.com', '170810100866', 'Teknik Kimia', 'ktm-200525-c909b236d9.jpg', '', 3);
+INSERT INTO `anggota` (`anggota_id`, `ukm_id`, `username`, `password`, `nama_anggota`, `email`, `npm`, `fakultas`, `image`, `level`) VALUES
+(1, 0, 'superadmin@gmail.com', '889a3a791b3875cfae413574b53da4bb8a90d53e', 'superadmin', 'superadmin@gmail.com', '1', 'superadmin', '', 1),
+(2, 4, 'rayrahadii', '8cb2237d0679ca88db6464eac60da96345513964', 'Nyoman Rahadi Sasmita', 'rahadisasmita@gmail.com', '17081010086', 'FIK', 'ktm-200228-f48db1f35d.jpg', 2),
+(3, 4, 'naufal13', 'c61faacbcfb290c6a0c8615becda4eb973868313', 'Naufal Mumtaz', 'naufal@gmail.com', '17081010105', 'FIK', '', 3),
+(10, 4, 'aliev', '909cc24fe69e624f714546ce56269b8c5c44283b', 'aliev wisnu purnomo', 'aliev@gmail.com', '17081010093', 'FIK', '', 3),
+(12, 5, 'mifaabiyu', '8ba3600566ae2417a7622b7491f816b722d1d9e2', 'Mifa Abiyu', 'Mifa@gmail.com', '17081010090', 'Teknik Kimia', '', 3),
+(13, 5, 'dandos', '6cc751f8ce230e55a452f6a0b0fb0f2df040a4d6', 'Dandy Noor', 'dandos@gmail.com', '17081010102', 'Teknik Kimia', '', 2),
+(14, 5, 'rayrahadd', '488d53a74508dfd339004eb64ac50ae80e6248af', 'Ray Rahadii', 'rayrahad@gmail.com', '17081010089', 'Fisip', 'ktm-200228-9639427a3d.jpg', 3),
+(21, 4, 'rayrahadi1', '8cb2237d0679ca88db6464eac60da96345513964', 'Rahadi Sasmita ', 'rayrahadi@gmail.com', '170810100866', 'Teknik Kimia', 'ktm-200525-c909b236d9.jpg', 3),
+(22, 11, 'rahad', '8cb2237d0679ca88db6464eac60da96345513964', 'rayrahad', 'rahad@gmail.com', '21141414115', 'Teknik', 'ktm-200528-5c6bee3c48.jpg', 3),
+(32, 13, 'rahadiketua', '8cb2237d0679ca88db6464eac60da96345513964', 'rahadi ketua', 'rahadi@gmail.com', '17081010087', 'FAD', 'ktm-200601-0f588993b3.jpg', 2),
+(33, 13, 'rahadianggota', '8cb2237d0679ca88db6464eac60da96345513964', 'rahadi anggota', 'rahadianggota@gmail.com', '170810129', 'FIK', 'ktm-200601-7bb85fbcf9.jpg', 3),
+(35, 13, 'sasmita', '8cb2237d0679ca88db6464eac60da96345513964', 'sasmita s', 'sasmita@gmail.com', '17812903201', 'FISIP', 'ktm-200601-3a134e22a7.jpg', 3);
 
 -- --------------------------------------------------------
 
@@ -92,7 +91,11 @@ INSERT INTO `artikel` (`artikel_id`, `ukm_id`, `anggota_id`, `judul_artikel`, `k
 (14, 5, 0, 'musik', 'musik', 'admin musik', 'okwaokawokwaokaw', 'artikel-200525-2844753719.png', '2020-05-25 14:57:39'),
 (15, 4, 2, 'latihan rutin', 'ukm basket', 'rayrahadii', 'awokwaoawkoawok', 'artikel-200525-497777ffa1.jpg', '2020-05-25 15:19:37'),
 (17, 5, 13, 'UKM Musik', 'Ukm Musik', 'Dandy Noor', 'jkjijihuigyuf', 'artikel-200525-215b9e8928.jpg', '2020-05-25 17:49:26'),
-(18, 4, 21, 'Rayrahadi1', 'test artikel 1', 'Rahadi Sasmita ', 'isi artikel', 'artikel-200528-3a5a4ba69b.jpg', '2020-05-28 21:30:37');
+(18, 4, 21, 'Rayrahadi1', 'test artikel 1', 'Rahadi Sasmita ', 'isi artikel', 'artikel-200528-3a5a4ba69b.jpg', '2020-05-28 21:30:37'),
+(19, 0, 1, 'artikel superadmin', 'keterangan artikel superadmin', 'superadmin', 'isi artikel superadmin', 'artikel-200531-56fa4ae642.png', '2020-05-31 23:33:27'),
+(20, 0, 1, 'Superadmin 1', 'keterangan artikel superadmin 1', 'superadmin', 'isi artikel keterangan superadmin 1', 'artikel-200531-b880bccef2.png', '2020-05-31 23:58:04'),
+(22, 13, 32, 'judul rahadi ketua 1', 'keterangan rahadi ketua', 'rahadi ketua', 'isi artikel rahadi ketua', 'artikel-200601-e51c6b9b68.png', '2020-06-01 00:25:43'),
+(23, 13, 33, 'judul rahadi anggota', 'keterangan rahadi anggota', 'rahadi anggota', 'isi artikel rahadi anggota', 'artikel-200601-694f55d064.png', '2020-06-01 00:27:32');
 
 -- --------------------------------------------------------
 
@@ -119,7 +122,9 @@ INSERT INTO `ukm` (`ukm_id`, `nama_ukm`, `ketua_ukm`, `status_ukm`, `keterangan_
 (5, 'Musik', 'Ketua UKM Musik', 'Aktif', 'Keterangan UKM Musik', 'UKM', 'ukm-200229-7c37574622.png'),
 (8, 'Informatic Learning Community', 'Afrizal Yasin', 'Aktif', 'Keterangan Komunitas ILC', 'Komunitas', 'ukm-200229-f1922a56cd.jpg'),
 (9, 'Futsal', 'Ketua UKM Futsal', 'Aktif', 'UKM FUTSAL UPNVJT', 'UKM', 'ukm-200525-5bd9973df0.jpeg'),
-(10, 'Komunitas Linux UPN ', 'Fathur Rohman', 'Aktif', 'Komunitas dari Fakultas Ilmu Komputer', 'Komunitas', 'ukm-200525-9596340523.jpg');
+(10, 'Komunitas Linux UPN ', 'Fathur Rohman', 'Aktif', 'Komunitas dari Fakultas Ilmu Komputer', 'Komunitas', 'ukm-200525-9596340523.jpg'),
+(11, 'Pramuka', 'ketua ukm pramuka', 'Aktif', 'ukm pramuka upn veteran jatim', 'UKM', 'ukm-200528-265355a83e.png'),
+(13, 'Football', 'naufal', 'Aktif', 'keterangan ukm football', 'UKM', 'ukm-200531-18f9c78d1f.png');
 
 --
 -- Indexes for dumped tables
@@ -151,19 +156,19 @@ ALTER TABLE `ukm`
 -- AUTO_INCREMENT for table `anggota`
 --
 ALTER TABLE `anggota`
-  MODIFY `anggota_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `anggota_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `artikel`
 --
 ALTER TABLE `artikel`
-  MODIFY `artikel_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `artikel_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `ukm`
 --
 ALTER TABLE `ukm`
-  MODIFY `ukm_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ukm_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
