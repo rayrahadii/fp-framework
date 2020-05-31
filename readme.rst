@@ -14,4 +14,4 @@ Progress Project Yang Sudah Dikerjakan
 11. Tampilan Detail / Home UKM
 12. Dan Lain" Masih Diperkirakan
 
-[Untuk Live Demo Disini](http://siukom.000webhostapp.com/)
+Live Demo Ada Disini http://siukom.000webhostapp.com/
