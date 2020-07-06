@@ -37,36 +37,5 @@ public function process()
 		$this->session->unset_userdata($params);
 		redirect('home/login');
 	}
-	public function register()
-	{
-		if($this->input->post()){
-			$username=$this->input->post('username');
-			$nama=$this->input->post('nama');
-			$email=$this->input->post('email');
-			$password1=$this->input->post('password1');
-			$password2=$this->input->post('password2');
-			$npm=$this->input->post('npm');
-			$level=$this->input->post('level');
-			$fakultas=$this->input->post('fakultas');
-			$image = $_FILES['image']['name'];
-                $lokasi = $_FILES['image']['tmp_name'];
-                move_uploaded_file($lokasi, "./uploads/ktm" . $image);
 
-			$tambah=array(
-				'username'=>$username,
-				'password'=>$password1,
-				'nama_anggota'=>$nama,
-				'email'=>$email,
-				'npm'=>$npm,
-				'fakultas'=>$fakultas,
-				'level'=>$level,
-				'image'=>$image,
-							);
-				$this->db->insert('anggota',$tambah);
-				redirect('home/login');
-		}
-		else {
-			$this->load->view('register');
-		}
-}
 }
